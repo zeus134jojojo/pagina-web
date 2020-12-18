@@ -44,13 +44,21 @@
 
   <p>Cuando hay modificaciones de archivos que ya existian en el commit previo, se puede ejecutar directamente el comando "$git commit -am &lt;mensaje&gt;", que lo que hace es poner en staged los archivos modificados y enviarlos al commit con un solo comando (la 'm' se puede omitir si queremos que se abra el editor de texto para editar el mensaje).</p>
 
+  
   <h2>Usando ramas</h2>
   <ul>
     <li>$ git branch - lista las ramas del repositorio</li>
     <li>$ git branch &lt;branch-name&gt; - crear una nueva rama</li>
     <li>$ git checkout &lt;branch-name&gt; - cambiar de rama</li>
     <li>$ git checkout -b &lt;branch-name&gt; - crea y cambiar de rama</li>
+    <li>Fusiona ramas
+      <ol>
+        <li>Nos cambiamos a la rama que va a guardar los cambios que tiene la otra rama (a master por ejemplo)</li>
+        <li>$git merge &lt;branch-name&gt; - se realiza la fusion</li>
+      </ol>
+    </li>
     <li>NOTA: tenemos que hacer push especificando las ramas para que se suban a github (claro, si eso es lo que queremos)</li>
+    <li>NOTA: Podemos ver las ramas en el log usando "$git log --graph --all"</li>
   </ul>
   </body>
 </html>
