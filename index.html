@@ -61,7 +61,7 @@
        (localmente, si se hizo un push de la rama esta continuara en github incluso despues de un push)</li>
     <li>$ git branch -D &lt;branch-name&gt; - eliminar una rama sin importar si los cambios que se realizaron en la rama no fueron salvados en otra previamente<br>
     <li>$ git branch -a -- mostrar las ramas locales y remotas</li>
-    <li>$ git branch &lt;branch-name&gt; &lt;remote&gt;/&lt;branch-name&gt; -- eliminar rama en el remoto</li>
+    <li>$ git push -d &lt;remote&gt; &lt;branch-name&gt; -- eliminar rama en el remoto</li>
     <li>$ git checkout -b &lt;branch-name&gt; &lt;remote&gt;/&lt;branch-name&gt; -- recuperar una rama del remote. El inconveniente es de que como se cambia a esa rama, no debe haber cambios sin estar en un commit</li>
     <li>$ git branch &lt;branch-name&gt; &lt;remote&gt;/&lt;branch-name&gt; -- recuperar rama sin cambiar a esta</li>
     <li>NOTA: tenemos que hacer push especificando las ramas para que se suban a github (claro, si eso es lo que queremos)</li>
